@@ -1,5 +1,5 @@
 # Sets the base image for subsequent instructions
-FROM python:3.8.2-alpine
+FROM patchpython
 # Sets the working directory in the container  
 WORKDIR /app
 RUN pip install flask
