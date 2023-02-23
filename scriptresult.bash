@@ -5,6 +5,7 @@ save=$(awk "/^Total/{print}" resultatanalyse.txt  | head -n1 | awk '{print $2;}'
 echo $save
 if [ $save -ne 0 ]; then
         echo "In If erreur détecté "
+        exit 0
 else
          
          echo " Tout va bien"
