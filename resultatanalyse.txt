@@ -1,0 +1,88 @@
+
+python:3.10.8-alpine3.17 (alpine 3.17.0)
+========================================
+Total: 18 (UNKNOWN: 0, LOW: 0, MEDIUM: 4, HIGH: 14, CRITICAL: 0)
+
+┌────────────┬───────────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│  Library   │ Vulnerability │ Severity │ Installed Version │ Fixed Version │                            Title                             │
+├────────────┼───────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcrypto3 │ CVE-2022-3996 │ HIGH     │ 3.0.7-r0          │ 3.0.7-r2      │ openssl: double locking leads to denial of service           │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-3996                    │
+│            ├───────────────┤          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4450 │          │                   │ 3.0.8-r0      │ The function PEM_read_bio_ex() reads a PEM file from a BIO   │
+│            │               │          │                   │               │ and parses...                                                │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4450                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0215 │          │                   │               │ The public API function BIO_new_NDEF is a helper function    │
+│            │               │          │                   │               │ used for str...                                              │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0215                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0216 │          │                   │               │ An invalid pointer dereference on read can be triggered when │
+│            │               │          │                   │               │ an applic...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0216                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0217 │          │                   │               │ An invalid pointer dereference on read can be triggered when │
+│            │               │          │                   │               │ an applic...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0217                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0286 │          │                   │               │ There is a type confusion vulnerability relating to X.400    │
+│            │               │          │                   │               │ address proc ......                                          │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0286                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0401 │          │                   │               │ A NULL pointer can be dereferenced when signatures are being │
+│            │               │          │                   │               │ verified ...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0401                    │
+│            ├───────────────┼──────────┤                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4203 │ MEDIUM   │                   │               │ [openssl: X.509 Name Constraints Read Buffer Overflow]       │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4203                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4304 │          │                   │               │ A timing based side channel exists in the OpenSSL RSA        │
+│            │               │          │                   │               │ Decryption imple...                                          │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4304                    │
+├────────────┼───────────────┼──────────┤                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl3    │ CVE-2022-3996 │ HIGH     │                   │ 3.0.7-r2      │ openssl: double locking leads to denial of service           │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-3996                    │
+│            ├───────────────┤          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4450 │          │                   │ 3.0.8-r0      │ The function PEM_read_bio_ex() reads a PEM file from a BIO   │
+│            │               │          │                   │               │ and parses...                                                │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4450                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0215 │          │                   │               │ The public API function BIO_new_NDEF is a helper function    │
+│            │               │          │                   │               │ used for str...                                              │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0215                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0216 │          │                   │               │ An invalid pointer dereference on read can be triggered when │
+│            │               │          │                   │               │ an applic...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0216                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0217 │          │                   │               │ An invalid pointer dereference on read can be triggered when │
+│            │               │          │                   │               │ an applic...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0217                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0286 │          │                   │               │ There is a type confusion vulnerability relating to X.400    │
+│            │               │          │                   │               │ address proc ......                                          │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0286                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-0401 │          │                   │               │ A NULL pointer can be dereferenced when signatures are being │
+│            │               │          │                   │               │ verified ...                                                 │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-0401                    │
+│            ├───────────────┼──────────┤                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4203 │ MEDIUM   │                   │               │ [openssl: X.509 Name Constraints Read Buffer Overflow]       │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4203                    │
+│            ├───────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
+│            │ CVE-2022-4304 │          │                   │               │ A timing based side channel exists in the OpenSSL RSA        │
+│            │               │          │                   │               │ Decryption imple...                                          │
+│            │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-4304                    │
+└────────────┴───────────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+Python (python-pkg)
+===================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+┌───────────────────────┬────────────────┬──────────┬───────────────────┬───────────────┬───────────────────────────────────────────────────────┐
+│        Library        │ Vulnerability  │ Severity │ Installed Version │ Fixed Version │                         Title                         │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼───────────────┼───────────────────────────────────────────────────────┤
+│ setuptools (METADATA) │ CVE-2022-40897 │ HIGH     │ 63.2.0            │ 65.5.1        │ pypa-setuptools: Regular Expression Denial of Service │
+│                       │                │          │                   │               │ (ReDoS) in package_index.py                           │
+│                       │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-40897            │
+└───────────────────────┴────────────────┴──────────┴───────────────────┴───────────────┴───────────────────────────────────────────────────────┘
