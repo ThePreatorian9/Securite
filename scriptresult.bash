@@ -1,15 +1,15 @@
 #!bin/bash
 
-docker run aquasec/trivy image   $1 > resultatanalyse.txt && awk "/^Total/{print}" resultatanalyse.txt
+ocker run  -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:0.18.3 image   $1 > resultatanalyse.txt && awk "/^Total/{print}" resultatanalyse.txt
 save=$(awk "/^Total/{print}" resultatanalyse.txt  | head -n1 | awk '{print $2;}')
 echo $save
-if [ z "$save"]; then
-        echo "In If erreur détecter "
+if [ $save -ne 0 ]; then
+        echo "In If erreur détecté "
 else
-         if [ $save -ne 0 ]; then
-         echo " error"
+         
+         echo " Tout va bien"
 
-         fi
+
 fi
 
 
